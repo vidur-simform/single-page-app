@@ -1,0 +1,10 @@
+.cont{
+    display: block;
+    height: 100vh;
+}
+.title {
+    text-align: center ;
+}
+.nav{
+    position: sticky;
+}
