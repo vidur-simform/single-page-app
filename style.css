@@ -1,10 +1,107 @@
-.cont{
-    display: block;
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
+    padding-top: 60px;
 }
-.title {
-    text-align: center ;
+
+.services {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-.nav{
-    position: sticky;
+/* navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+.nav-link {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    margin: 3px;
+}
+
+/* .nav-link:hover {
+    background-color: rgba(210, 210, 210, 0.7);
+} */
+/* home */
+#home-section {
+    background-image: url("images/home-picture.jpeg");
+}
+
+.image {
+    height: 80vh;
+    width: 100%;
+}
+
+.images #carouselExampleAutoplaying {
+    width: 90%;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(230, 240, 240, 0.7);
+}
+
+.carousel-control-prev {
+    background-color: rgba(230, 230, 230, 0.7);
+    height: 20vh;
+    width: 4vw;
+    margin-top: 30vh;
+}
+
+.carousel-control-next {
+    background-color: rgba(230, 230, 230, 0.7);
+    height: 20vh;
+    width: 4vw;
+    margin-top: 30vh;
+}
+/* about us */
+#about-us-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: #edeff0;
+}
+
+.about-us-title {
+    margin-top: 0;
+    font-weight: 300;
+    color: #444;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-us-motive {
+    font-size: 35px;
+    color: #444;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.about-us-descr {
+    width: 70%;
+    text-align: justify;
+}
+/* footer */
+footer {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #b3b6b7;
+    color: black;
 }

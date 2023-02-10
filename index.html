@@ -13,39 +13,148 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
   <title>Single Page App</title>
+  <link rel="icon" type="image/x-icon" href="images/creasey-construction-favicon.jpg">
 </head>
 
 <body>
+  <!-- navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#home-section">Home</a>
-          <a class="nav-link" href="#about-us-section">About Us</a>
-          <a class="nav-link" href="#images-section">Images</a>
-          <a class="nav-link" href="#services-section">Services</a>
-          <!-- <a class="nav-link disabled">Disabled</a> -->
+          <a class="nav-link" aria-current="page" id="home-link">Home</a>
+          <a class="nav-link" id="services-link">Our Services</a>
+          <a class="nav-link" id="images-link">Images</a>
+          <a class="nav-link" id="about-us-link">About Us</a>
         </div>
       </div>
     </div>
   </nav>
+  <!-- home -->
   <div class="cont home" id="home-section">
-    <h1 al class="title">Home</h1>
+    <h1 class="title">Build your dream house </h1>
   </div>
+
+<!-- services -->
+  <div class="cont services" id="services-section">
+    <h1 class="title">Our Services</h1>
+    <div class="card-cont">
+
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img style="height:30vh; width: 40vw;" src="images/card-build.jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">House Construction</h3>
+              <p class="card-text">We build your house as per your requirement and budjet.</p>
+              <p class="card-text"><small class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, ut. Animi totam quasi temporibus dolores facere odit tempora blanditiis, nihil delectus iusto qui? Quidem consequuntur nobis neque deleniti! Incidunt, vero.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img style="height:30vh; width: 40vw;" src="images/card-arc.jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">House Architecture</h3>
+              <p class="card-text">We design architecture of houses as per your requirement.</p>
+              <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ducimus, temporibus recusandae autem aperiam beatae? Quod dolorum corrupti, suscipit voluptatum id enim porro eius maxime. Facilis corrupti quo nihil fugiat!</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- images -->
+  <div class="cont images" id="images-section">
+    <h1 class="title">Some Of Our Projects</h1>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="image" src="images/house1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img class="image" src="images/house2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img class="image" src="images/house3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- about us -->
   <div class="cont about-us" id="about-us-section">
     <h1 class="title">About Us</h1>
+    <h3 class="about-us-motive">We design and build modern houses <br /> We want you to get your shelter build in modern
+      way and cost effectively.
+    </h3>
+    <p class="about-us-descr">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+    </p>
+    <p class="about-us-descr">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+    </p>
+    <p class="about-us-descr">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+    </p>
+    <p class="about-us-descr">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+    </p>
+    <p class="about-us-descr">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis velit deserunt sapiente accusamus sed eius
+      et non repellat mollitia explicabo libero fugiat at voluptas temporibus commodi ex, aspernatur ipsam quidem!
+    </p>
   </div>
-  <div class="cont images" id="images-section">
-    <h1 class="title">Images</h1>
-  </div>
-  <div class="cont services" id="services-section">
-    <h1 class="title">Services</h1>
-  </div>
+  <!-- footer -->
+  <footer>
+    Copyright &#169; 2023 &nbsp; <b>Abc.com</b> &nbsp; All Rights Reserved
+  </footer>
+
 </body>
 
 </html>
